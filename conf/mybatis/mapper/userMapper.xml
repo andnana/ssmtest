@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.andnana.dao.UserDao">
+<select id="selectUser" parameterType="String" resultType="top.andnana.User">
+select * from User where username = #{username}
+</select>
+<insert id="insertUser">
+	insert into user values(#{id}, #{username}, #{password})
+</insert>
+<update id="updateUser">
+	update user set username = #{username} , password = #{password} where id = #{id}
+</update>
+<delete id="deleteUser">
+	delete from user where id = #{id}
+</delete>
+<select id="selectUserByUsername" parameterType="String"  resultType="top.andnana.User">
+	select * from User where username = #{param1} and password = #{param2}
+</select>
+<!-- public List<User> selectAll(); -->
+<select id="selectAll" resultType="top.andnana.User">
+	select * from User
+</select>
+</mapper>
