@@ -1,17 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"  
     pageEncoding="UTF-8"%>  
     <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">  
  
 <html>
 <head>
 
 <title>人杰的小站</title>
-<c:set var="ctx" value="${pageContext.request.contextPath}" />
+
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="keywords" content="java,android,java web,小程序，微信公众平台，安卓,网站开,程序开发" />
 <meta name="description" content="一个程序开发人员的网站，个人介绍。个人程序相关信息。
 " />
+<c:set var="ctx" var="ctx" value="${pageContext.request.contextPath}"></c:set>
 <script type="text/javascript" src="${ctx}/resources/js/jquery-1.4.3.js"></script>
 <link href="${ctx}/resources/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" midia="screen" />
  <link href="${ctx}/resources/css/02.css" rel="stylesheet" type="text/css" midia="screen" />  
@@ -19,6 +21,7 @@
 </head>
 
 <body>
+
 <div id="container">
 <div id="banner">
 	<!--<span>仙人掌网站制作</span>-->
@@ -32,6 +35,8 @@
 </div>-->
 <div id="content">
 <h1>${message}</h1>
+
+
 <table>
 	<tr><td></td><td></td><td></td></tr>
 	<c:forEach items="${userList }" var="user">
