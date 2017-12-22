@@ -14,7 +14,7 @@ public static void main(String[] args) {
 //		System.out.println("user" + user);
 //		sqlSession.close();
 		UserDao userDao = sqlSession.getMapper(UserDao.class);
-//		User user2 = userDao.selectUser("renjie");
+//		User user2 = userDao.selectUser("aaa");
 //		System.out.println("user2" + user2);
 //		User user3 = new User();
 //		user3.setPassword("123");
@@ -24,8 +24,8 @@ public static void main(String[] args) {
 //		
 //		userDao.updateUser(user2);
 //		userDao.deleteUser(3);
-		User user4 = userDao.selectUserByUsername("renjie", "123");
-		System.out.println(user4);
+//		User user4 = userDao.selectUserByUsername("renjie");
+//		System.out.println(user4);
 		sqlSession.close();
 	} catch (IOException e) {
 		

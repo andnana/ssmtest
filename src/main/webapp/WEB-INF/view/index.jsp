@@ -7,18 +7,22 @@
 <head>
 
 <title>人杰的小站</title>
+<c:set var="ctx" value="${pageContext.request.contextPath}" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="keywords" content="java,android,java web,小程序，微信公众平台，安卓,网站开,程序开发" />
 <meta name="description" content="一个程序开发人员的网站，个人介绍。个人程序相关信息。
 " />
-<link href="https://www.andnana.top/resource/02.css" rel="stylesheet" type="text/css" midia="screen" />
+<script type="text/javascript" src="${ctx}/resources/js/jquery-1.4.3.js"></script>
+<link href="${ctx}/resources/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" midia="screen" />
+ <link href="${ctx}/resources/css/02.css" rel="stylesheet" type="text/css" midia="screen" />  
+ <link href="${ctx}/resources/bootstrap-3.3.7-dist/js/bootstrap.min.js" rel="stylesheet" type="text/css" midia="screen" />
 </head>
 
 <body>
 <div id="container">
 <div id="banner">
 	<!--<span>仙人掌网站制作</span>-->
-	<img src='https://www.andnana.top/resource/images/1916.jpg'/>
+	<img src='${ctx}/resources/images/1916.jpg'/>
 	</div>
 <!--<div class="nav">
 	<ul>
@@ -54,24 +58,24 @@
 		不过我还是很高兴的。
 		
 	</p>
-	<img src="https://www.andnana.top/resource/images/androidapppic.jpg" />
+	<img src="${ctx}/resources/images/androidapppic.jpg" />
 	<p>
 		我做的一个用来练手的购物网站。用的是java的ssh技术。
 		
 	</p>
-	<img src="https://www.andnana.top/resource/images/20170913153850.png" />
+	<img src="${ctx}/resources/images/20170913153850.png" />
 		<p>
 		我用brophp做的一个网站。
 		
 		
 	</p>
-	<img src="https://www.andnana.top/resource/images/20170913163404.png" />
+	<img src="${ctx}/resources/images/20170913163404.png" />
 	<p>
 		之后我有了一位客户。做了一个会员会费充值、添加消费记录、查看消费记录的一个安卓应用程序。做完之后又改为小程序版本。
 		
 		
 	</p>
-     <img src="https://www.andnana.top/resource/images/20170913163155.png" />
+     <img src="${ctx}/resources/images/20170913163155.png" />
 	
 </div>
 		<!--<ul style="float:left;background-color:#ffffff;display:inline;position:relative;padding-top:15px;"><li style="display:inline;float:left;width:200px;height:200px;"><img src="images/Screenshot_2015-01-08-14-49-51.png" height="100px"  /> 
@@ -82,6 +86,9 @@
 					<br /><p class=index-img-info>看看您还喝不喝茶<a href="imgdetail4.html">&nbsp;&nbsp详细</a><br /></p></li>
 					<li style="display:inline;float:left;width:200px;height:200px;"><img src="images/Screenshot_2015-01-08-19-38-28.png" height="100px"  /> 
 					<br /><p class=index-img-info>此茶浓香耐泡型<a href="imgdetail5.html">&nbsp;&nbsp详细</a><br /></p></li></ul>	-->	
+</div>
+<div>
+<button type="button" class="btn btn-info">（一般信息）Info</button>
 </div>
 <div id="footer">1079597830@qq.com&nbsp;&nbsp;辽ICP备13010981号-2</div>
 </div>

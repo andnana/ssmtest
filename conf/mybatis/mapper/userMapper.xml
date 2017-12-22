@@ -15,8 +15,10 @@ select * from User where username = #{username}
 <delete id="deleteUser">
 	delete from user where id = #{id}
 </delete>
+            
 <select id="selectUserByUsername" parameterType="String"  resultType="top.andnana.User">
-	select * from User where username = #{param1} and password = #{param2}
+	<!-- select * from User where username = #{param1} -->
+	 select * from User where username = #{username} 
 </select>
 <!-- public List<User> selectAll(); -->
 <select id="selectAll" resultType="top.andnana.User">

@@ -2,7 +2,7 @@ package top.andnana.dao;
 
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
+import org.apache.ibatis.annotations.Param;
 
 import top.andnana.User;
 
@@ -14,5 +14,5 @@ public interface UserDao {
 	public void insertUser(User user);
 	public void updateUser(User user);
 	public void deleteUser(Integer id);
-	public User selectUserByUsername(String username, String password);
+	public User selectUserByUsername(@Param("username") String username);
 }
